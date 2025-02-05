@@ -1,0 +1,29 @@
+{
+  "name": "react-crud",
+  "version": "1.0.0",
+  "main": "./backend/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./backend/main.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "node backend/main.js"
+  },
+  "keywords": [
+    "crud",
+    "node",
+    "express",
+    "mongodb",
+    "react"
+  ],
+  "author": "Eki Asari",
+  "license": "ISC",
+  "description": "CRUD product application",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
